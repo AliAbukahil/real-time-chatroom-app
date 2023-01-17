@@ -13,10 +13,7 @@
     />
     <!-- Css -->
     <link rel="stylesheet" href="style.css" />
-    <!-- Js -->
-    <script defer src="./scripts/chat.js"></script>
-    <script defer src="./scripts/ui.js"></script>
-    <script defer src="./scripts/app.js"></script>
+
     <title>real-time-chatroom-app</title>
   </head>
   <body>
@@ -62,5 +59,26 @@
         <div class="update-mssg"></div>
       </form>
     </div>
+    <!-- Firebase script -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+    <script>
+      // Initialize Firebase
+      const config = {
+        apiKey: "AIzaSyCOJNZ0cb7nK1Tj65g-PUDRsrfcjcohHjs",
+        authDomain: "udemy-modern-javascript-9d832.firebaseapp.com",
+        projectId: "udemy-modern-javascript-9d832",
+        storageBucket: "udemy-modern-javascript-9d832.appspot.com",
+        messagingSenderId: "502472401988",
+        appId: "1:502472401988:web:46dc011a4335aff5964811",
+        measurementId: "G-3P3JKW03KT",
+      };
+      firebase.initializeApp(config);
+      const db = firebase.firestore();
+    </script>
+    <!-- My script -->
+    <script src="./scripts/chat.js"></script>
+    <script src="./scripts/ui.js"></script>
+    <script src="./scripts/app.js"></script>
   </body>
 </html>
