@@ -7,6 +7,10 @@ class ChatUI {
     this.list = list;
   }
 
+  clear() {
+    this.list.innerHTML = "";
+  }
+
   render(data) {
     // fns library method
     const when = dateFns.distanceInWordsToNow(data.created_at.toDate(), {
